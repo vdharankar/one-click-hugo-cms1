@@ -19,5 +19,5 @@
   [plugins.inputs]
     record = true
 
-[context.production.environment]
+[context.deploy-preview.environment]
   HUGO_VERSION = "0.83.1"
