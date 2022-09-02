@@ -3,26 +3,6 @@
   YARN_VERSION = "1.22.17"
 
 [build]
-  command = "yarn build"
-  publish = "dist"
-
-[context.deploy-preview]
-  command = "yarn build:preview"
-
-[dev]
-  framework = "hugo"
-  targetPort = 3000
-
-[[plugins]]
-  package = "netlify-plugin-cypress"
-
-  [plugins.inputs]
-    record = true
-
-[context.deploy-preview.environment]
-  HUGO_VERSION = "0.83.1"
-
-[build]
 publish = "public"
 command = "hugo --gc --minify"
 
