@@ -18,3 +18,6 @@
 
   [plugins.inputs]
     record = true
+
+[context.production.environment]
+  HUGO_VERSION = "0.83.1"
